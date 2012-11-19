@@ -65,6 +65,9 @@
 		Implemented i18n language support.
 		Renamed main file to SpecialDeleteOldRevisions2 and the SpecialPage class file to DeleteOldRevisionsPage.
 		Misc cleanup.
+    
+	v1.6.1 November 19, 2012: jehy
+		Fixed description to show i18n string, added russian language support.
 		
 	TODO:
 	Delete groups of 100 objects - SQL query too long
@@ -90,8 +93,8 @@ $wgSpecialPageGroups['DeleteOldRevisions'] = 'pagetools';
 $wgExtensionCredits['specialpage'][] = array(
 	'path'			=> __FILE__,
 	'name'			=> 'DeleteOldRevisions',
-	'description'	=> 'deleteoldrevisions-desc',
+	'descriptionmsg'	=> 'deleteoldrevisions-desc',
 	'url' 			=> 'http://www.mediawiki.org/wiki/Extension:SpecialDeleteOldRevisions2',
 	'author' 		=> array( 'Marc Noirot','Gunter Schmidt','[http://jehy.ru/wiki-extensions.en.html Jehy]','[http://cyclical.ca/ Philip Nicolcev]' ),
-	'version' 		=> '1.5'
+	'version' 		=> '1.6.1'
 );
