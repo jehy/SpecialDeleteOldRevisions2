@@ -228,6 +228,7 @@ function DeleteOldRevisions( $delete = false, $pagename = '', $namespace = 0, $m
 	if ( $namespace != -100 ) $sql += array('page_namespace' => $namespace);
 	#$res = $dbw->select( array('page'), array('page_id', 'page_latest'), $sql );
 	$res = $dbw->select( array('page'), array('page_latest'), $sql );
+  $cur=array();
 	while( $row = $dbw->fetchObject( $res ) ) {
 		$cur[] = $row->page_latest;
 		//$page[] = $row->page_id;
